@@ -1,0 +1,138 @@
+@import 'globals';
+@import 'utilities';
+
+#bvdContainer {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 24px;
+  }
+}
+
+.bvd-hero {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    padding: 80px 15px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-align: center;
+
+    &-meta {
+      display: none;
+    }
+
+    &-propInfo {
+      margin-bottom: 50px;
+      letter-spacing: 3px;
+      font-weight: 300;
+      font-size: 13px;
+    }
+
+    &-propWriteup {
+      margin-bottom: 100px;
+
+      h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// #bvdHero {
+//   position: relative;
+
+//   .videoContainer {
+//     overflow: hidden;
+//     max-height: 100vh;
+//     position: relative;
+
+//     @media screen and (min-width: 768px) {
+//       //   max-height: auto;
+//     }
+
+//     #propertyVideo {
+//       width: 100%;
+//       height: 100vh;
+//       display: none;
+
+//       @media screen and (min-width: 768px) {
+//         display: block;
+//       }
+//     }
+
+//     img {
+//       display: block;
+
+//       @media screen and (min-width: 768px) {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   .textOverlay {
+//     color: #fff;
+//     text-align: center;
+//     padding-top: 70px;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: rgba(0, 0, 0, 0.5);
+//   }
+
+//   .textOverlay_meta {
+//     display: none;
+//   }
+
+//   .textOverlay_propInfo {
+//     font-size: 14px;
+//     letter-spacing: 5px;
+//     line-height: 25px;
+//     p {
+//       margin: 0;
+//       padding: 0;
+//     }
+//   }
+
+//   .textOverlay_propWriteup {
+//     h1 {
+//       font-size: 50px;
+//       font-weight: 500;
+//       line-height: 1;
+//     }
+
+//     p {
+//       font-size: 19px;
+//       padding: 0 10px;
+//     }
+
+//     span {
+//       font-weight: 600;
+//       font-size: 40px;
+//       display: block;
+//       padding: 10px 0;
+//     }
+//   }
+
+//   .textOverlay_cta {
+//     padding: 0 10px;
+//   }
+// }
