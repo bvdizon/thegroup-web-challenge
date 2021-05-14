@@ -6,6 +6,10 @@
 
   @media screen and (min-width: 768px) {
     display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #fff;
   }
 
   nav {

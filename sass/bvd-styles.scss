@@ -6,6 +6,7 @@
 
 .bvd-map {
   padding-bottom: 100px;
+  padding-top: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -15,9 +16,22 @@
 
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   img {
     width: 100%;
   }
+}
+
+.bvd-multimedia {
+  padding-top: 50px;
 }
