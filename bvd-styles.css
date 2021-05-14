@@ -12,12 +12,18 @@ body {
   padding: 0;
 }
 
-#bvdContainer {
+a {
+  text-decoration: none;
+}
+
+.bvdContainer {
+  max-width: 1260px;
   width: 100%;
   margin: 0;
   padding: 0;
   margin: 0 auto;
 }
+
 .bvd-btn {
   color: #fff;
   display: block;
@@ -33,13 +39,20 @@ body {
   border-radius: 15px;
 }
 
+.bvd-btn-black {
+  background: #000;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 100px;
+}
+
 .bvd-svg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .bvd-svg img {
-  padding-right: 5px;
+  padding-right: 8px;
 }
 
 .bvd-hero {
@@ -62,6 +75,8 @@ body {
   .bvd-hero__video-bg {
     display: block;
     width: 100%;
+    object-fit: cover;
+    height: 70vh;
   }
 }
 .bvd-hero__overlay {
@@ -144,4 +159,41 @@ body {
   .bvd-hero__overlay-cta > * {
     flex: 0 0 35%;
   }
+  .bvd-hero__overlay-cta .bvd-svg {
+    justify-content: flex-start;
+  }
+}
+
+.bvd-navigation {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .bvd-navigation {
+    display: block;
+  }
+}
+.bvd-navigation nav {
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .bvd-navigation nav {
+    display: flex;
+  }
+}
+.bvd-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.bvd-navigation li {
+  margin-right: 20px;
+}
+.bvd-navigation li a {
+  text-decoration: none;
+  color: #000;
 }
