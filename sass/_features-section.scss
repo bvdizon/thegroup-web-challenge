@@ -1,0 +1,101 @@
+.bvd-property-info {
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 4fr 3fr;
+  }
+
+  article {
+    h2 {
+      font-size: 30px;
+      margin: 0;
+
+      @media screen and (min-width: 768px) {
+        font-size: 50px;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #555;
+
+      @media screen and (min-width: 768px) {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      line-height: 1.8;
+      color: #555;
+    }
+  }
+
+  div {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    p {
+      text-align: center;
+
+      span:first-of-type {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+    span {
+      display: block;
+    }
+  }
+
+  &__cta {
+    a {
+      display: block;
+      border: 1px solid #000;
+      padding: 20px;
+      text-align: center;
+      margin: 10px 0;
+      text-transform: uppercase;
+      color: #000;
+      font-size: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__features-list {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    li {
+      margin: 10px 0;
+      font-size: 13px;
+    }
+  }
+}

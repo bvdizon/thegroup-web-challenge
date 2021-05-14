@@ -1,0 +1,38 @@
+.bvd-navigation {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  nav {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    justify-content: space-between;
+
+    a {
+      font-family: 'Jost';
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    margin-right: 20px;
+
+    a {
+      color: #000;
+    }
+  }
+}

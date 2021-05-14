@@ -12,6 +12,13 @@ body {
   padding: 0;
 }
 
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -53,6 +60,17 @@ a {
 }
 .bvd-svg img {
   padding-right: 8px;
+}
+
+.mtop-lg {
+  margin-top: 50px;
+}
+
+.section-header {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 500;
 }
 
 .bvd-hero {
@@ -183,6 +201,9 @@ a {
     display: flex;
   }
 }
+.bvd-navigation nav a {
+  font-family: "Jost";
+}
 .bvd-navigation ul {
   list-style: none;
   margin: 0;
@@ -194,6 +215,100 @@ a {
   margin-right: 20px;
 }
 .bvd-navigation li a {
-  text-decoration: none;
   color: #000;
+}
+
+.bvd-property-info {
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 1024px) {
+  .bvd-property-info {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 4fr 3fr;
+  }
+}
+.bvd-property-info article h2 {
+  font-size: 30px;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .bvd-property-info article h2 {
+    font-size: 50px;
+  }
+}
+.bvd-property-info article h3 {
+  margin-top: 0;
+  color: #555;
+}
+@media screen and (min-width: 768px) {
+  .bvd-property-info article h3 {
+    font-size: 30px;
+  }
+}
+.bvd-property-info article p {
+  line-height: 1.8;
+  color: #555;
+}
+.bvd-property-info div h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.bvd-property-info__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  .bvd-property-info__features {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bvd-property-info__features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.bvd-property-info__features p {
+  text-align: center;
+}
+.bvd-property-info__features p span:first-of-type {
+  font-size: 20px;
+  font-weight: 700;
+}
+.bvd-property-info__features span {
+  display: block;
+}
+.bvd-property-info__cta a {
+  display: block;
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 15px;
+}
+@media screen and (min-width: 768px) {
+  .bvd-property-info__cta {
+    margin-bottom: 50px;
+  }
+}
+.bvd-property-info__features-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.bvd-property-info__features-list li {
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.bvd-map {
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
