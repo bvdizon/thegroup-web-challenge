@@ -37,25 +37,23 @@ body {
     padding: 0 24px;
   }
 }
-
-.bvd-svg {
+#bvdContainer .bvd-svg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bvd-svg img {
+#bvdContainer .bvd-svg img {
   padding-right: 10px;
 }
-
-.bvd-hero {
+#bvdContainer .bvd-hero {
   position: relative;
 }
-.bvd-hero__img-bg {
+#bvdContainer .bvd-hero__img-bg {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
-.bvd-hero__overlay {
+#bvdContainer .bvd-hero__overlay {
   padding: 80px 15px 30px;
   position: absolute;
   top: 0;
@@ -66,21 +64,21 @@ body {
   color: #fff;
   text-align: center;
 }
-.bvd-hero__overlay-meta {
+#bvdContainer .bvd-hero__overlay-meta {
   display: none;
 }
-.bvd-hero__overlay-propInfo {
+#bvdContainer .bvd-hero__overlay-propInfo {
   margin-bottom: 50px;
   letter-spacing: 3px;
   font-weight: 300;
   font-size: 13px;
 }
-.bvd-hero__overlay-propWriteup h1 {
+#bvdContainer .bvd-hero__overlay-propWriteup h1 {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.bvd-hero__overlay-propWriteup span {
+#bvdContainer .bvd-hero__overlay-propWriteup span {
   display: block;
   font-size: 40px;
   font-weight: 500;
