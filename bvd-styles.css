@@ -269,20 +269,15 @@ a {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .bvd-property-info__features {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 .bvd-property-info__features p {
   text-align: center;
 }
-.bvd-property-info__features p span:first-of-type {
-  font-size: 20px;
-  font-weight: 700;
-}
-.bvd-property-info__features span {
+.bvd-property-info__features p span {
   display: block;
+}
+.bvd-property-info__features p span:first-of-type {
+  font-size: 27px;
+  font-weight: 500;
 }
 .bvd-property-info__cta a {
   display: block;

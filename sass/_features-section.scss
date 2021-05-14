@@ -53,20 +53,17 @@
       margin-bottom: 50px;
     }
 
-    @media screen and (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
     p {
       text-align: center;
 
-      span:first-of-type {
-        font-size: 20px;
-        font-weight: 700;
+      span {
+        display: block;
       }
-    }
-    span {
-      display: block;
+
+      span:first-of-type {
+        font-size: 27px;
+        font-weight: 500;
+      }
     }
   }
 
