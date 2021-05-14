@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./bvd-styles1.css">
+    <link rel="stylesheet" href="./bvd-styles.css">
 </head>
 
 <body>
     <main id="bvdContainer">
         <section class="bvd-hero">
             <img class="bvd-hero__img-bg" src="https://thegroup-resource.netlify.app/Chris-Personal-MLS-80.jpg" alt="">
+
+            <video autoplay muted loop id="myVideo" class="bvd-hero__video-bg">
+                <source src="https://thegroup-resource.netlify.app/12512 17th Street, Woodlands Calgary.mp4"
+                    type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
 
             <div class="bvd-hero__overlay">
                 <div class="bvd-hero__overlay-meta">
@@ -40,12 +46,16 @@
                 </div>
 
                 <div class="bvd-hero__overlay-cta">
-                    <a href="#" class="bvd-btn bvd-btn-outline">EXPLORE THE PROPERTY</a>
-                    <a href="#" class="bvd-btn bvd-svg"><img
-                            src="https://thegroup-resource.netlify.app/icons/video-camera.svg" alt="video camera icon"
-                            height="40px" width="40px">
-                        VIEW THE VIDEO
-                        TOUR</a>
+                    <div>
+                        <a href="#" class="bvd-btn bvd-btn-outline">EXPLORE THE PROPERTY</a>
+                    </div>
+                    <div>
+                        <a href="#" class="bvd-btn bvd-svg"><img
+                                src="https://thegroup-resource.netlify.app/icons/video-camera.svg"
+                                alt="video camera icon" height="40px" width="40px">
+                            VIEW THE VIDEO
+                            TOUR</a>
+                    </div>
                 </div>
             </div>
         </section>

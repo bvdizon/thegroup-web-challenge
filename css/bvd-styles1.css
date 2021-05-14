@@ -71,6 +71,9 @@ body {
   font-weight: 300;
   font-size: 13px;
 }
+.bvd-hero__overlay-propInfo p {
+  margin: 0;
+}
 .bvd-hero__overlay-propWriteup h1 {
   font-size: 40px;
   font-weight: 500;

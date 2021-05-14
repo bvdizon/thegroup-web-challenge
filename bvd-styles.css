@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap");
+body {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#bvdContainer {
+  font-family: "Jost", sans-serif !important;
+  width: 100%;
+  max-width: 1260px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  #bvdContainer {
+    padding: 0 24px;
+  }
+}
+
+.bvd-btn {
+  color: #fff;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 15px 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.bvd-btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.bvd-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bvd-svg img {
+  padding-right: 5px;
+}
+
+.bvd-hero {
+  position: relative;
+}
+.bvd-hero__img-bg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+@media screen and (min-width: 1024px) {
+  .bvd-hero__img-bg {
+    display: none;
+  }
+}
+.bvd-hero__video-bg {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .bvd-hero__video-bg {
+    display: block;
+    width: 100%;
+  }
+}
+.bvd-hero__overlay {
+  padding: 80px 15px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .bvd-hero__overlay {
+    padding: 10px 30px;
+  }
+}
+.bvd-hero__overlay-meta {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .bvd-hero__overlay-meta {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 50px;
+  }
+}
+.bvd-hero__overlay-propInfo {
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 13px;
+}
+.bvd-hero__overlay-propInfo p {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .bvd-hero__overlay-propInfo {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.bvd-hero__overlay-propWriteup h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.bvd-hero__overlay-propWriteup span {
+  display: block;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 20px 0 50px 0;
+}
+@media screen and (min-width: 768px) {
+  .bvd-hero__overlay-propWriteup {
+    display: flex;
+  }
+  .bvd-hero__overlay-propWriteup > * {
+    flex: 0 0 50%;
+  }
+  .bvd-hero__overlay-propWriteup h1 {
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .bvd-hero__overlay-propWriteup p {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bvd-hero__overlay-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bvd-hero__overlay-cta > * {
+    flex: 0 0 35%;
+  }
+}

@@ -20,4 +20,7 @@ function addCss(fileName) {
   head.appendChild(link);
 }
 
+addCss('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap');
+addCss('https://thegroup-resource.netlify.app/bvd-styles1.css');
+
 addCss('{my-url}');
