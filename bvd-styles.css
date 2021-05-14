@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap");
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Jost", sans-serif;
   margin: 0;
@@ -30,6 +23,8 @@ body {
 #bvdContainer {
   width: 100%;
   max-width: 1260px;
+  margin: 0;
+  padding: 0;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
