@@ -4,6 +4,8 @@
 #bvdContainer {
   width: 100%;
   max-width: 1260px;
+  margin: 0;
+  padding: 0;
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
