@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-.btn {
+.bvd-btn {
   color: #fff;
   display: block;
   width: 80%;
@@ -15,12 +15,13 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
 }
-.btn-outline {
+.bvd-btn-outline {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
 }
 
 #bvdContainer {
+  font-family: "Jost", sans-serif !important;
   width: 100%;
   max-width: 1260px;
   margin: 0;
@@ -32,23 +33,25 @@ body {
     padding: 0 24px;
   }
 }
-#bvdContainer .bvd-svg {
+
+.bvd-svg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#bvdContainer .bvd-svg img {
+.bvd-svg img {
   padding-right: 10px;
 }
-#bvdContainer .bvd-hero {
+
+.bvd-hero {
   position: relative;
 }
-#bvdContainer .bvd-hero__img-bg {
+.bvd-hero__img-bg {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
-#bvdContainer .bvd-hero__overlay {
+.bvd-hero__overlay {
   padding: 80px 15px 30px;
   position: absolute;
   top: 0;
@@ -59,21 +62,21 @@ body {
   color: #fff;
   text-align: center;
 }
-#bvdContainer .bvd-hero__overlay-meta {
+.bvd-hero__overlay-meta {
   display: none;
 }
-#bvdContainer .bvd-hero__overlay-propInfo {
+.bvd-hero__overlay-propInfo {
   margin-bottom: 50px;
   letter-spacing: 3px;
   font-weight: 300;
   font-size: 13px;
 }
-#bvdContainer .bvd-hero__overlay-propWriteup h1 {
+.bvd-hero__overlay-propWriteup h1 {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-#bvdContainer .bvd-hero__overlay-propWriteup span {
+.bvd-hero__overlay-propWriteup span {
   display: block;
   font-size: 40px;
   font-weight: 500;

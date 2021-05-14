@@ -2,6 +2,7 @@
 @import 'utilities';
 
 #bvdContainer {
+  font-family: 'Jost', sans-serif !important;
   width: 100%;
   max-width: 1260px;
   margin: 0;
@@ -11,68 +12,68 @@
   @media screen and (min-width: 768px) {
     padding: 0 24px;
   }
-
-  // Start of #bvdContainer
-
-  .bvd-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      padding-right: 10px;
-    }
-  }
-
-  .bvd-hero {
-    position: relative;
-
-    &__img-bg {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-    }
-
-    &__overlay {
-      padding: 80px 15px 30px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-      color: #fff;
-      text-align: center;
-
-      &-meta {
-        display: none;
-      }
-
-      &-propInfo {
-        margin-bottom: 50px;
-        letter-spacing: 3px;
-        font-weight: 300;
-        font-size: 13px;
-      }
-
-      &-propWriteup {
-        // margin-bottom: 100px;
-
-        h1 {
-          font-size: 40px;
-          font-weight: 500;
-          margin-bottom: 20px;
-        }
-
-        span {
-          display: block;
-          font-size: 40px;
-          font-weight: 500;
-          margin: 20px 0 50px 0;
-        }
-      }
-    }
-  }
-
-  // End of #bvdContainer
 }
+
+// Start of #bvdContainer
+
+.bvd-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    padding-right: 10px;
+  }
+}
+
+.bvd-hero {
+  position: relative;
+
+  &__img-bg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    padding: 80px 15px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-align: center;
+
+    &-meta {
+      display: none;
+    }
+
+    &-propInfo {
+      margin-bottom: 50px;
+      letter-spacing: 3px;
+      font-weight: 300;
+      font-size: 13px;
+    }
+
+    &-propWriteup {
+      // margin-bottom: 100px;
+
+      h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      span {
+        display: block;
+        font-size: 40px;
+        font-weight: 500;
+        margin: 20px 0 50px 0;
+      }
+    }
+  }
+}
+
+// End of #bvdContainer
