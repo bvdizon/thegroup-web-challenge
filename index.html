@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./lightbox.css">
     <link rel="stylesheet" href="./bvd-styles.css">
 </head>
 
@@ -220,35 +221,49 @@
         </section>
 
         <!-- section 05 -->
-        <section class="bvd-multimedia bvdContainer" id="bvd-multimedia">
-            <h2 style="font-family: 'Jost';" class="section-header">Video + Photos</h2>
-            <iframe width="100%" height="709px" src="https://www.youtube.com/embed/PCG7mhngWy0"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <div class="bvd-gallery" id="bvd-gallery">
-                <!-- images for the listed property -->
+        <section>
+            <div class="bvd-multimedia bvdContainer" id="bvd-multimedia">
+                <h2 style="font-family: 'Jost';" class="section-header">Video + Photos</h2>
+                <iframe width="100%" height="709px" src="https://www.youtube.com/embed/PCG7mhngWy0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="bvd-gallery" id="bvd-gallery">
+                    <!-- images for the listed property -->
+                </div>
             </div>
+
+            <!-- Fetching data from google sheet -->
+            <script>
+                const sheetID = "1DHFzNs84Ctfmh5EY1ShKTIRGqY5D9NbJal064a6V_5Q"
+                const sheetAPI = `https://spreadsheets.google.com/feeds/list/${sheetID}/5/public/values?alt=json`
+
+                const insertImages = data => {
+                    document.getElementById('bvd-gallery').innerHTML = "";
+                    data.forEach(data => {
+                        let imageHTML =
+                            `<a href="${data.gsx$imageurl.$t}" data-lightbox="listing"><img src="${data.gsx$imageurl.$t}" alt=${data.gsx$property.$t} /></a>`
+                        document.getElementById('bvd-gallery').innerHTML += imageHTML;
+                    });
+                }
+                const getPropertyImages = (url) => {
+                    fetch(url).then(response => response.text()).then(data => insertImages(JSON.parse(data).feed
+                        .entry))
+                }
+                getPropertyImages(sheetAPI)
+            </script>
+            <!-- jQuery and lightbox -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://thegroup-resource.netlify.app/ligthbox.js"></script>
+            <script>
+                lightbox.option({
+                    'resizeDuration': 100,
+                    'wrapAround': true
+                })
+            </script>
         </section>
-
-        <script>
-            const sheetID = "1DHFzNs84Ctfmh5EY1ShKTIRGqY5D9NbJal064a6V_5Q"
-            const sheetAPI = `https://spreadsheets.google.com/feeds/list/${sheetID}/5/public/values?alt=json`
-
-            const insertImages = data => {
-                document.getElementById('bvd-gallery').innerHTML = "";
-                data.forEach(data => {
-                    let imageHTML = `<img src="${data.gsx$imageurl.$t}" alt=${data.gsx$property.$t} />`
-                    document.getElementById('bvd-gallery').innerHTML += imageHTML;
-                });
-            }
-            const getPropertyImages = (url) => {
-                fetch(url).then(response => response.text()).then(data => insertImages(JSON.parse(data).feed.entry))
-            }
-            getPropertyImages(sheetAPI)
-        </script>
-
-
 
         <!-- cmty-section -->
         <section id="bvd-community">
@@ -256,6 +271,7 @@
         </section>
     </main>
 
+    <!-- Scripts for Lightbox -->
 
 </body>
 
