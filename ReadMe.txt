@@ -24,3 +24,8 @@ addCss('https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=s
 addCss('https://thegroup-resource.netlify.app/bvd-styles1.css');
 
 addCss('{my-url}');
+
+
+# uploaded urls:
+/uploads/agent-1/the-group/svg-icons/bathtub.svg
+https://www.calgary-real-estate.com/uploads/agent-1/the-group/svg-icons/bathtub.svg
