@@ -442,24 +442,8 @@ a {
   letter-spacing: 1px;
   color: #282828;
 }
-#bvd-community .video-container iframe {
+#bvd-community .video-container video {
   width: 100%;
-  min-height: 300px;
-}
-@media screen and (min-width: 768px) {
-  #bvd-community .video-container iframe {
-    min-height: 415px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #bvd-community .video-container iframe {
-    min-height: 560px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #bvd-community .video-container iframe {
-    min-height: 340px;
-  }
 }
 #bvd-community .video-writeup h2 {
   font-size: 40px;
