@@ -257,6 +257,22 @@
     padding: 50px 15px;
     background-color: #f9f9f9;
 
+    @media screen and (min-width: 1200px) {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: 2fr 1fr;
+
+      .view-form {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+
+      .view-text {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+    }
+
     .view-text {
       h2 {
         font-size: 30px;
