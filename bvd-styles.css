@@ -588,7 +588,7 @@ a {
 }
 #bvd-community .contact {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -601,17 +601,15 @@ a {
 #bvd-community .contact h1 {
   font-size: 50px;
   margin-top: 0;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   #bvd-community .contact h1 {
-    font-size: 80px;
+    font-size: 85px;
     font-weight: 600;
   }
 }
 #bvd-community .contact h2 {
   font-size: 25px;
-  margin-bottom: 0;
 }
 #bvd-community .contact h3:nth-of-type(1) {
   font-weight: 300;
