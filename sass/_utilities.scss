@@ -63,3 +63,11 @@
   font-size: 40px;
   font-weight: 600;
 }
+
+.show-on-large {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: inline;
+  }
+}

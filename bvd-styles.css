@@ -87,6 +87,15 @@ a {
   font-weight: 600;
 }
 
+.show-on-large {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .show-on-large {
+    display: inline;
+  }
+}
+
 .bvd-hero {
   position: relative;
 }
