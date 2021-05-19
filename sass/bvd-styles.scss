@@ -260,6 +260,7 @@
     .bvdContainer {
       @media screen and (min-width: 1200px) {
         display: grid;
+        grid-gap: 100px;
         grid-template-columns: 2fr 1fr;
       }
     }
@@ -270,6 +271,7 @@
       }
       h2 {
         font-size: 30px;
+        margin-top: 30px;
       }
 
       p {

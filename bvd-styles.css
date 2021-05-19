@@ -560,6 +560,7 @@ a {
 @media screen and (min-width: 1200px) {
   #bvd-community .viewing .bvdContainer {
     display: grid;
+    grid-gap: 100px;
     grid-template-columns: 2fr 1fr;
   }
 }
@@ -570,6 +571,7 @@ a {
 }
 #bvd-community .viewing .view-text h2 {
   font-size: 30px;
+  margin-top: 30px;
 }
 #bvd-community .viewing .view-text p {
   color: #6a6a6a;
