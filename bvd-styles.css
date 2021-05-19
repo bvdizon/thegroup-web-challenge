@@ -473,7 +473,7 @@ a {
 #bvd-community .video-writeup p {
   color: #6a6a6a;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (min-width: 1200px) {
   #bvd-community .video {
@@ -488,13 +488,13 @@ a {
 }
 #bvd-community .map h2 {
   font-size: 30px;
-  font-weight: 600px;
+  font-weight: 600;
   margin: 0;
 }
 #bvd-community .map p {
   color: #6a6a6a;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (min-width: 1024px) {
   #bvd-community .map p {
