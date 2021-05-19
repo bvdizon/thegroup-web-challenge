@@ -444,6 +444,9 @@ a {
 }
 #bvd-community .video-container video {
   width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 #bvd-community .video-writeup h2 {
   font-size: 40px;

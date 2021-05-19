@@ -124,6 +124,9 @@
   .video-container {
     video {
       width: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
     }
   }
 
