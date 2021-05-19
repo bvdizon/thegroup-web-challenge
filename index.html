@@ -259,17 +259,6 @@
                 }
                 getPropertyImages(sheetAPI)
             </script>
-            <!-- jQuery and lightbox -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://thegroup-resource.netlify.app/ligthbox.js"></script>
-            <script>
-                lightbox.option({
-                    'resizeDuration': 100,
-                    'wrapAround': true
-                })
-            </script>
         </section>
 
         <!-- cmty-section -->
@@ -342,15 +331,41 @@
                         7 days a week. A couple of the roads here extend into Fish Creek Provincial Park affording
                         residents a pristine wildlife setting in one of Southern Alberta’s largest nature reserves.</p>
                 </div>
-                <div class="amenities-photos">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
+
+                <div class="amenities-photos" id="amenities">
+                    <!-- Community amenities -->
                 </div>
+
+                <!-- Fetching data from google sheet -->
+                <script>
+                    const sheetIDCmtyAmenities = "1DHFzNs84Ctfmh5EY1ShKTIRGqY5D9NbJal064a6V_5Q"
+                    const sheetAPICmtyAmenities =
+                        `https://spreadsheets.google.com/feeds/list/${sheetIDCmtyAmenities}/6/public/values?alt=json`
+
+                    const insertAmenitiesImages = data => {
+                        document.getElementById('amenities').innerHTML = "";
+
+                        const amenities = data.filter(item => item.gsx$category.$t === 'amenities')
+
+                        amenities.forEach((data, index) => {
+                            if (index >= 4) {
+                                let imageHTML =
+                                    `<a href="${data.gsx$imageurl.$t}" data-lightbox="amenities" style="display: none;"><img src="${data.gsx$imageurl.$t}" alt=${data.gsx$cmty.$t}/></a>`
+                                document.getElementById('amenities').innerHTML += imageHTML;
+                            } else {
+                                let imageHTML =
+                                    `<a href="${data.gsx$imageurl.$t}" data-lightbox="amenities"><img src="${data.gsx$imageurl.$t}" alt=${data.gsx$cmty.$t} /></a>`
+                                document.getElementById('amenities').innerHTML += imageHTML;
+                            }
+                        });
+                    }
+                    const getCommunityAmenitiesImages = (url) => {
+                        fetch(url).then(response => response.text()).then(data => insertAmenitiesImages(JSON.parse(
+                                data).feed
+                            .entry))
+                    }
+                    getCommunityAmenitiesImages(sheetAPICmtyAmenities)
+                </script>
             </div>
 
             <!-- woodlands-listing-05 -->
@@ -364,15 +379,43 @@
                         with new retailers continuously added to the mix. You’ll also find major grocery stores like
                         Safeway, chain restaurants Earls & Moxies and big box retail shops including Toys R Us. </p>
                 </div>
-                <div class="amenities-photos">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
-                    <img src="https://inthehood.io/wp-content/uploads/2021/04/Woodlands-19.jpg" alt="">
+                <div class="amenities-photos" id="shopAndDine">
+                    <!-- Community shop and dine -->
                 </div>
+
+
+
+                <!-- Fetching data from google sheet -->
+                <script>
+                    const sheetIDCmtyShopAndDine = "1DHFzNs84Ctfmh5EY1ShKTIRGqY5D9NbJal064a6V_5Q"
+                    const sheetAPICmtyShopAndDine =
+                        `https://spreadsheets.google.com/feeds/list/${sheetIDCmtyShopAndDine}/6/public/values?alt=json`
+
+                    const insertShopAndDineImages = data => {
+                        document.getElementById('shopAndDine').innerHTML = "";
+
+                        const shopAndDine = data.filter(item => item.gsx$category.$t === 'shop-dine')
+
+                        shopAndDine.forEach((data, index) => {
+                            if (index >= 4) {
+                                let imageHTML =
+                                    `<a href="${data.gsx$imageurl.$t}" data-lightbox="shopDine" style="display: none;"><img src="${data.gsx$imageurl.$t}" alt=${data.gsx$cmty.$t}/></a>`
+                                document.getElementById('shopAndDine').innerHTML += imageHTML;
+                            } else {
+                                let imageHTML =
+                                    `<a href="${data.gsx$imageurl.$t}" data-lightbox="shopDine"><img src="${data.gsx$imageurl.$t}" alt=${data.gsx$cmty.$t} /></a>`
+                                document.getElementById('shopAndDine').innerHTML += imageHTML;
+                            }
+                        });
+                    }
+                    const getCommunityShopAndDineImages = (url) => {
+                        fetch(url).then(response => response.text()).then(data => insertShopAndDineImages(JSON
+                            .parse(
+                                data).feed
+                            .entry))
+                    }
+                    getCommunityShopAndDineImages(sheetAPICmtyShopAndDine)
+                </script>
             </div>
 
             <!-- woodlands-listing-06 -->
@@ -392,7 +435,17 @@
         </section>
     </main>
 
-    <!-- Scripts for Lightbox -->
+    <!-- jQuery and lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://thegroup-resource.netlify.app/ligthbox.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 100,
+            'wrapAround': true
+        })
+    </script>
 
 </body>
 

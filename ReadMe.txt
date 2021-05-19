@@ -29,3 +29,6 @@ addCss('{my-url}');
 # uploaded urls:
 /uploads/agent-1/the-group/svg-icons/bathtub.svg
 https://www.calgary-real-estate.com/uploads/agent-1/the-group/svg-icons/bathtub.svg
+
+/uploads/agent-1/the-group/community/woodlands/sm/woodlands_wm__10_.jpg
+https://www.calgary-real-estate.com/uploads/agent-1/the-group/community/woodlands/sm/woodlands_wm__10_.jpg
