@@ -11,8 +11,8 @@
 }
 
 .bvd-gallery {
-  height: 450px;
-  overflow: scroll;
+  height: auto;
+  // overflow: scroll;
 
   display: grid;
   grid-gap: 5px;

@@ -337,8 +337,7 @@ a {
 }
 
 .bvd-gallery {
-  height: 450px;
-  overflow: scroll;
+  height: auto;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(2, 1fr);

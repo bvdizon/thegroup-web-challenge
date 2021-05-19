@@ -241,10 +241,16 @@
 
                 const insertImages = data => {
                     document.getElementById('bvd-gallery').innerHTML = "";
-                    data.forEach(data => {
-                        let imageHTML =
-                            `<a href="${data.gsx$imageurl.$t}" data-lightbox="listing"><img src="${data.gsx$imageurl.$t}" alt=${data.gsx$property.$t} /></a>`
-                        document.getElementById('bvd-gallery').innerHTML += imageHTML;
+                    data.forEach((data, index) => {
+                        if (index >= 8) {
+                            let imageHTML =
+                                `<a href="${data.gsx$imageurl.$t}" data-lightbox="listing"><img src="${data.gsx$imageurl.$t}" alt=${data.gsx$property.$t} style="display: none;"/></a>`
+                            document.getElementById('bvd-gallery').innerHTML += imageHTML;
+                        } else {
+                            let imageHTML =
+                                `<a href="${data.gsx$imageurl.$t}" data-lightbox="listing"><img src="${data.gsx$imageurl.$t}" alt=${data.gsx$property.$t} /></a>`
+                            document.getElementById('bvd-gallery').innerHTML += imageHTML;
+                        }
                     });
                 }
                 const getPropertyImages = (url) => {
@@ -270,7 +276,8 @@
         <section id="bvd-community">
             <!-- woodlands-listing-01 -->
             <div class="hero">
-                <img src="https://thegroup-resource.netlify.app/woodlands-hero-bg.jpg" alt="Woodlands community">
+                <img src="https://www.calgary-real-estate.com/uploads/agent-1/the-group/community/woodlands/woodlands-hero-bg.jpg"
+                    alt="Woodlands community">
                 <div class="hero-text">
                     <div class="bvdContainer">
                         <h4 style="font-family: Jost, sans-serif;">The Neighborhood</h4>
@@ -289,7 +296,8 @@
             <!-- woodlands-listing-02 -->
             <div class="video bvdContainer mtop-lg">
                 <div class="video-container">
-                    <video autoplay muted loop>
+                    <video autoplay muted loop
+                        poster="https://www.calgary-real-estate.com/uploads/agent-1/the-group/community/woodlands/woodlands-vid-poster.jpg">
                         <source src="https://thegroup-resource.netlify.app/woodlands-calgary.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
