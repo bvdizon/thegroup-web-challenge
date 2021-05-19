@@ -630,7 +630,11 @@ a {
 }
 #bvd-community .contact-info p {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (min-width: 1024px) {
+  #bvd-community .contact-info p {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 #bvd-community .contact-photo img {
   width: 100%;
