@@ -558,18 +558,14 @@ a {
   background-color: #f9f9f9;
 }
 @media screen and (min-width: 1200px) {
-  #bvd-community .viewing {
+  #bvd-community .viewing .bvdContainer {
     display: grid;
-    grid-gap: 50px;
     grid-template-columns: 2fr 1fr;
   }
-  #bvd-community .viewing .view-form {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
+}
+@media screen and (min-width: 1200px) {
   #bvd-community .viewing .view-text {
     grid-column: 2/3;
-    grid-row: 1/2;
   }
 }
 #bvd-community .viewing .view-text h2 {
@@ -580,4 +576,10 @@ a {
   line-height: 1.6;
   font-weight: 400;
   font-size: 17px;
+}
+@media screen and (min-width: 1200px) {
+  #bvd-community .viewing .view-form {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
