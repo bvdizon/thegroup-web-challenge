@@ -628,13 +628,14 @@ a {
 #bvd-community .contact-info {
   padding: 10px 30px;
 }
-#bvd-community .contact-info p {
-  display: grid;
-  text-align: center;
+#bvd-community .contact-info p span {
+  display: block;
+  margin-bottom: 10px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   #bvd-community .contact-info p {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex !important;
+    justify-content: space-evenly;
   }
 }
 #bvd-community .contact-photo img {

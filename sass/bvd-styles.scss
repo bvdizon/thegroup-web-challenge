@@ -338,11 +338,13 @@
     padding: 10px 30px;
 
     p {
-      display: grid;
-      text-align: center;
-
-      @media screen and (min-width: 1024px) {
-        grid-template-columns: repeat(3, 1fr);
+      span {
+        display: block;
+        margin-bottom: 10px;
+      }
+      @media screen and (min-width: 768px) {
+        display: flex !important;
+        justify-content: space-evenly;
       }
     }
   }
