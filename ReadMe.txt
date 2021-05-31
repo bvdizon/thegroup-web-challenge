@@ -45,8 +45,7 @@ https://www.calgary-real-estate.com/uploads/agent-1/the-group/community/woodland
   <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 ## Script to add custom styles:
-  </section>
-  <script>// <![CDATA[
+  <script>
   function addCss(fileName) {
 
     var head = document.head;
@@ -60,4 +59,4 @@ https://www.calgary-real-estate.com/uploads/agent-1/the-group/community/woodland
   }
 
   addCss('https://thegroup-resource.netlify.app/media-styles.css');
-  // ]]></script>
+</script>
