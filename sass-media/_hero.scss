@@ -1,7 +1,8 @@
-.hero {
+.theGroupHero {
   position: relative;
   max-height: 200px;
   overflow: hidden;
+  margin-bottom: 50px;
 
   @media screen and (min-width: 1024px) {
     max-height: 200px;
@@ -12,7 +13,7 @@
   }
 }
 
-.overlay {
+.theGroupOverlay {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 0;
