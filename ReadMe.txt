@@ -32,3 +32,6 @@ https://www.calgary-real-estate.com/uploads/agent-1/the-group/svg-icons/bathtub.
 
 /uploads/agent-1/the-group/community/woodlands/sm/woodlands_wm__10_.jpg
 https://www.calgary-real-estate.com/uploads/agent-1/the-group/community/woodlands/sm/woodlands_wm__10_.jpg
+
+
+/uploads/agent-1/the-group/12512-17-street-sw/12512-17-street-sw-hero-bg.jpg
