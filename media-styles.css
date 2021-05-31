@@ -151,7 +151,7 @@ h1.small {
 @media screen and (min-width: 1200px) {
   .theGroupOverlay h1 {
     font-size: 40px;
-    width: 1260px;
+    width: 980px;
     margin: 0 auto;
   }
 }
