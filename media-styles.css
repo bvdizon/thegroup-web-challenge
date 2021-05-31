@@ -65,6 +65,13 @@ img {
   margin: 20px 0;
 }
 
+#body .container {
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 0 !important;
+  clear: both;
+}
+
 .theGroupHero {
   position: relative;
   max-height: 200px;

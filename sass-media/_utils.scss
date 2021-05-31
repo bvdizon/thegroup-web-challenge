@@ -19,3 +19,11 @@
   border-radius: 4px;
   margin: 20px 0;
 }
+
+// overrides to C-R-E Styles
+#body .container {
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 0 !important;
+  clear: both;
+}
