@@ -50,3 +50,21 @@
   padding: 0 !important;
   clear: both;
 }
+
+// overrides to R-E Styles
+#body .wrap {
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 0 !important;
+  clear: both;
+}
+
+#content h2 {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+.pg-media-room-dev h1,
+h1.small {
+  border-bottom: none;
+}
