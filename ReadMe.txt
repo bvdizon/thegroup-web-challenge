@@ -38,4 +38,26 @@ https://www.calgary-real-estate.com/uploads/agent-1/the-group/community/woodland
 
 ###===============================================================================
 
-Photo by Kaboompics .com from Pexels
+## hero image:
+  Photo by Kaboompics .com from Pexels
+
+## newspaper folded svg:
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+## Script to add custom styles:
+  </section>
+  <script>// <![CDATA[
+  function addCss(fileName) {
+
+    var head = document.head;
+    var link = document.createElement("link");
+
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.href = fileName;
+
+    head.appendChild(link);
+  }
+
+  addCss('https://thegroup-resource.netlify.app/media-styles.css');
+  // ]]></script>

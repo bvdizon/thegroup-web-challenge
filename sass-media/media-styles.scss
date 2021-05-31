@@ -16,7 +16,7 @@
   --grey-900: #0f172a;
 
   /* other */
-  --primary-color: #ea002a;
+  --primary-color: #b11107;
 }
 
 *,
@@ -53,3 +53,55 @@ img {
 
 // NEWS
 @import 'news';
+
+.theGroupNewsReleases {
+  padding: 50px 10px;
+  background-color: var(--grey-100);
+
+  &__card {
+    border-bottom: 1px solid var(--grey-300);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 10fr;
+  }
+
+  &__icon {
+    width: 77px;
+    margin-bottom: 10px;
+  }
+
+  &__content {
+    h3 {
+      color: var(--primary-color);
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 24px;
+      }
+    }
+    p {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-btn {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin: 30px 0 0;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 25px;
+    }
+  }
+}
