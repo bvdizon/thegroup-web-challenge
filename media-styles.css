@@ -78,6 +78,18 @@ img {
   }
 }
 
+.mbottom-5 {
+  margin-bottom: 5px;
+}
+
+.mbottom-10 {
+  margin-bottom: 10px;
+}
+
+.mbottom-20 {
+  margin-bottom: 20px;
+}
+
 #body .container {
   width: 100% !important;
   margin: 0 auto;
@@ -268,4 +280,16 @@ img {
 .theGroupBlogs__content p {
   color: var(--grey-700);
   line-height: 1.5;
+}
+
+.theGroupMediaContacts {
+  background-color: var(--grey-100);
+  padding: 50px 0;
+}
+.theGroupMediaContacts small {
+  display: block;
+  margin-bottom: 15px;
+}
+.theGroupMediaContacts a {
+  color: var(--primary-color);
 }

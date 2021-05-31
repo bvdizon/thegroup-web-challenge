@@ -1,0 +1,40 @@
+.theGroupBlogs {
+  padding: 0 10px;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__card {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    h3 {
+      margin: 20px 0;
+    }
+    h3 a {
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+    }
+    h3 a img {
+      width: 20px;
+      height: 20px;
+      margin-left: 15px;
+    }
+
+    p {
+      color: var(--grey-700);
+      line-height: 1.5;
+    }
+  }
+}
