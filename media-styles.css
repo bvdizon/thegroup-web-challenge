@@ -200,14 +200,14 @@ img {
   width: 77px;
   margin-bottom: 10px;
 }
-.theGroupNewsReleases__content h3 {
+.theGroupNewsReleases__content h3 a {
   color: var(--primary-color);
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .theGroupNewsReleases__content h3 {
+  .theGroupNewsReleases__content h3 a {
     font-size: 24px;
   }
 }
