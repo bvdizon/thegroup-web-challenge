@@ -186,6 +186,7 @@ img {
 
 .theGroupNewsReleases {
   padding: 50px 10px;
+  margin-bottom: 50px;
   background-color: var(--grey-100);
 }
 .theGroupNewsReleases__card {
@@ -229,4 +230,42 @@ img {
   .theGroupNewsReleases-btn {
     font-size: 25px;
   }
+}
+
+.theGroupBlogs {
+  padding: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .theGroupBlogs {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .theGroupBlogs {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.theGroupBlogs__card {
+  margin-bottom: 50px;
+}
+.theGroupBlogs__content h3 {
+  margin: 20px 0;
+}
+.theGroupBlogs__content h3 a {
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+.theGroupBlogs__content h3 a img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+.theGroupBlogs__content p {
+  color: var(--grey-700);
+  line-height: 1.5;
 }
