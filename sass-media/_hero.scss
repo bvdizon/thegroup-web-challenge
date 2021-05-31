@@ -11,6 +11,12 @@
   @media screen and (min-width: 1200px) {
     max-height: 300px;
   }
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
 }
 
 .theGroupOverlay {

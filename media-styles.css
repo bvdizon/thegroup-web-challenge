@@ -98,11 +98,6 @@ ul {
   clear: both;
   max-width: 100%;
 }
-#body .wrap img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
 
 #content h2 {
   border-bottom: none;
@@ -129,6 +124,11 @@ h1.small {
   .theGroupHero {
     max-height: 300px;
   }
+}
+.theGroupHero img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .theGroupOverlay {
