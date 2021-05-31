@@ -39,12 +39,6 @@ ul {
   padding: 0;
 }
 
-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
 // UTILS
 @import 'utils';
 
@@ -60,16 +54,5 @@ img {
 // BLOGS
 @import 'blogs';
 
-.theGroupMediaContacts {
-  background-color: var(--grey-100);
-  padding: 50px 0;
-
-  small {
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  a {
-    color: var(--primary-color);
-  }
-}
+// CONTACTS
+@import 'contacts';

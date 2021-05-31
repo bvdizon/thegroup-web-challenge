@@ -37,12 +37,6 @@ ul {
   padding: 0;
 }
 
-img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
 .bvdContainer {
   max-width: 1260px;
   width: 100%;
@@ -103,6 +97,11 @@ img {
   padding: 0 !important;
   clear: both;
   max-width: 100%;
+}
+#body .wrap img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 #content h2 {
