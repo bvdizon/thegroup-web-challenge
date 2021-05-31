@@ -35,3 +35,7 @@ https://www.calgary-real-estate.com/uploads/agent-1/the-group/community/woodland
 
 
 /uploads/agent-1/the-group/12512-17-street-sw/12512-17-street-sw-hero-bg.jpg
+
+###===============================================================================
+
+Photo by Kaboompics .com from Pexels
