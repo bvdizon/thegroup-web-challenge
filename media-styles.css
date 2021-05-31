@@ -110,49 +110,50 @@ h1.small {
 }
 
 .theGroupHero {
-  position: relative;
-  max-height: 200px;
-  overflow: hidden;
-  margin-bottom: 50px;
-}
-@media screen and (min-width: 1024px) {
-  .theGroupHero {
-    max-height: 200px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .theGroupHero {
-    max-height: 300px;
-  }
-}
-.theGroupHero img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.theGroupOverlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 5fr;
   align-items: center;
+  padding: 0 10px;
 }
-.theGroupOverlay h1 {
-  color: var(--grey-50);
-  font-weight: 300;
-  font-size: 25px;
-  letter-spacing: 1px;
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .theGroupHero {
+    grid-gap: 50px;
+    grid-template-columns: 3fr 6fr;
+  }
+}
+.theGroupHero__image {
+  width: 100%;
+}
+.theGroupHero__title h1 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+@media screen and (min-width: 425px) {
+  .theGroupHero__title h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .theGroupHero__title h1 {
+    font-size: 45px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .theGroupOverlay h1 {
-    font-size: 40px;
-    width: 980px;
-    margin: 0 auto;
+  .theGroupHero__title h1 {
+    font-size: 60px;
+  }
+}
+.theGroupHero__title span {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .theGroupHero__title span {
+    font-size: 60px;
   }
 }
 
@@ -166,6 +167,7 @@ h1.small {
     display: grid;
     grid-gap: 25px;
     grid-template-columns: 5fr 4fr;
+    align-items: center;
   }
   .theGroupNews-video {
     padding-left: 25px;
@@ -281,6 +283,9 @@ h1.small {
 }
 .theGroupBlogs__card {
   margin-bottom: 50px;
+}
+.theGroupBlogs__card img {
+  width: 100%;
 }
 .theGroupBlogs__content h3 {
   margin: 20px 0;
