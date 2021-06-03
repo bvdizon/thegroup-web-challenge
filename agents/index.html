@@ -120,7 +120,7 @@
             const newAgents = await data.feed.entry.filter(agent => {
                 if (agent.gsx$city.$t === city)
                     return agent
-            }).splice(0, 6)
+            })
             return newAgents
         }
 
