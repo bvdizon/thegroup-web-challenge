@@ -12,6 +12,7 @@
 </head>
 
 <body style="max-width: 730px; width: 100%; margin: 0 auto; padding: 0 10px;">
+    <!-- agents-page-section-01 -->
     <div class="theGroupAgentIntro">
         <h1>About Real-Estate.ca</h1>
         <p>We're a group of Canadian real estate agents who are passionate about what we do. We take the honor of
@@ -20,6 +21,7 @@
             not hesitate to recommend to my friends and family. </p>
     </div>
 
+    <!-- agents-page-section-02 -->
     <div class="theGroupQuickLinks">
         <h2>Quick Links</h2>
         <ul>
@@ -61,12 +63,28 @@
             <h2>Calgary and Surrounding Area Realtors&reg;</h2>
             <img src="https://www.real-estate.ca/uploads/agent-1/agents/calgary-skyline.jpg" alt="Calgary Skyline">
         </header>
+
+        <section class="my-20">
+            <p>Veimilique ex ut vero est veritatis nihil non sapiente. Ea consequatur iusto
+                eaque commodi, quasi aliquam ipsum, aliquid vel exercitationem quidem perspiciatis error!</p>
+        </section>
+
+        <section class="theGroupAgentsList" id="calgaryRealtors"></section>
     </div>
 
+    <div class="theGroupCalgaryRealtors">
+        <header class="theGroupAreaHeader">
+            <h2>Edmonton and Surrounding Area Realtors&reg;</h2>
+            <img src="https://www.real-estate.ca/uploads/agent-1/agents/calgary-skyline.jpg" alt="Calgary Skyline">
+        </header>
 
+        <section class="my-20">
+            <p>Veimilique ex ut vero est veritatis nihil non sapiente. Ea consequatur iusto
+                eaque commodi, quasi aliquam ipsum, aliquid vel exercitationem quidem perspiciatis error!</p>
+        </section>
 
-
-
+        <section class="theGroupAgentsList" id="edmontonRealtors"></section>
+    </div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="theGroupCredits">
@@ -78,6 +96,53 @@
                 href="https://unsplash.com/s/photos/calgary?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </div>
     </div>
+
+
+    <!-- agents-page-section-scripts -->
+    <script>
+        const url =
+            'https://spreadsheets.google.com/feeds/list/1z-rXlasV9g2PerZz8uiVtuCEmY192U0LyJA3oWyo9i8/12/public/values?alt=json'
+
+        const getAgents = async (city) => {
+            const response = await fetch(url)
+            const data = await response.json();
+            const newAgents = await data.feed.entry.filter(agent => {
+                if (agent.gsx$city.$t === city)
+                    return agent
+            }).splice(0, 6)
+            return newAgents
+        }
+
+        const processData = (data, sectionId) => {
+            data.forEach(agent => {
+                let agentPhoto = agent.gsx$photo.$t === "" ?
+                    'https://via.placeholder.com/105x131.png?text=No+Photo' : `${agent.gsx$photo.$t}`
+
+
+                let html = `
+                <article >
+                    <figure>
+                        <div class="imgContainer">
+                            <a href="${agent.gsx$page.$t}"><img loading="lazy" src="${agentPhoto}"
+                                alt="${agent.gsx$first.$t} ${agent.gsx$last.$t}" width="105" height="131"></a>
+                        </div>
+                        <figcaption>
+                            <h3>${agent.gsx$first.$t} <span>${agent.gsx$last.$t}</span></h3>
+                            <p><span>Office #:</span> <span>${agent.gsx$office.$t}</span></p>
+                            <p><span>Mobile #:</span> <span>${agent.gsx$mobile.$t}</span></p>
+                            <p><span>Email:</span> <span><a href="mailto:${agent.gsx$email.$t}">${agent.gsx$email.$t}</a></span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                `
+                document.getElementById(sectionId).innerHTML += html
+            })
+        }
+
+        getAgents('Calgary').then(data => processData(data, 'calgaryRealtors'))
+        getAgents('Edmonton').then(data => processData(data, 'edmontonRealtors'))
+    </script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
 .theGroupAreaHeader {
   @media screen and (min-width: 768px) {
     position: relative;
+    margin-top: 100px;
 
     &::after {
       content: '';
@@ -50,4 +51,8 @@
       font-size: 26px;
     }
   }
+}
+
+.my-20 {
+  margin: 20px 0;
 }
