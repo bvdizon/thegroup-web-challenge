@@ -52,6 +52,11 @@
   }
 }
 
+#content h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 @font-face {
   font-family: DroidSerifRegular;
   src: url(../css/fonts/DroidSerif-Regular.ttf);
