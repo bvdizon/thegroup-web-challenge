@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import 'utilities';
+
+@font-face {
+  font-family: DroidSerifRegular;
+  src: url(../css/fonts/DroidSerif-Regular.ttf);
+}
+
+:root {
+  --font-body: 'Open Sans', sans-serif;
+
+  --primary-color: #a31825;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.theGroupAgentIntro {
+  h1 {
+    padding-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+
+.theGroupQuickLinks {
+  margin-bottom: 100px;
+  h2 {
+    font-weight: 400;
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-gap: 12px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+    }
+
+    li {
+      display: flex;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      transition: all ease-in-out 0.3s;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+      }
+    }
+  }
+}
