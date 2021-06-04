@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import 'utilities';
+@import 'overrides';
+
+@font-face {
+  font-family: DroidSerifRegular;
+  src: url(../css/fonts/DroidSerif-Regular.ttf);
+}
+
+:root {
+  --font-body: 'Open Sans', sans-serif;
+
+  --primary-color: #a31825;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.theGroupMenu1 {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+
+  @media screen and (min-width: 900px) {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 50px;
+  }
+
+  .menu-text {
+    h2 {
+      text-align: left;
+      font-weight: 600;
+    }
+  }
+
+  .menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+    @media screen and (min-width: 600px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-bottom: 20px;
+
+      h3 {
+        margin: 0 0 5px 0;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: left;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.bvdContainer {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.theGroupAreaHeader {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    margin-top: 100px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  img {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h2 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      z-index: 1;
+      color: #fff;
+      font-size: 26px;
+    }
+  }
+}
+
+.my-20 {
+  margin: 20px 0;
+}
