@@ -11,7 +11,7 @@
     head.appendChild(link);
   }
 
-  addCss('https://thegroup-resource.netlify.app/agents/css/styles.css');
+  addCss('https://thegroup-resource.netlify.app/mega-menu/css/styles.css');
 </script>
 
 

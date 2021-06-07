@@ -17,7 +17,8 @@ body {
   font-family: var(--font-body);
 }
 
-.theGroupMenu1 {
+.theGroupMenu1,
+.theGroupMenu2 {
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,7 +27,7 @@ body {
 
   @media screen and (min-width: 900px) {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
   }
 
@@ -64,5 +65,24 @@ body {
         text-decoration: none;
       }
     }
+  }
+}
+
+.theGroupMenu2 {
+  margin-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    .menu-text {
+      grid-column: 2/3;
+    }
+
+    .menu-items {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
   }
 }
