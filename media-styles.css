@@ -205,22 +205,22 @@ h1.small {
     font-size: 20px;
   }
 }
-.theGroupNews iframe {
+.theGroupNews img {
   width: 100%;
   height: 250px;
 }
 @media screen and (min-width: 768px) {
-  .theGroupNews iframe {
+  .theGroupNews img {
     height: 450px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .theGroupNews iframe {
+  .theGroupNews img {
     height: 598px;
   }
 }
 @media screen and (min-width: 1250px) {
-  .theGroupNews iframe {
+  .theGroupNews img {
     height: 300px;
   }
 }
