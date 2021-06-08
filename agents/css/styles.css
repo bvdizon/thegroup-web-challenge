@@ -155,8 +155,10 @@ body {
   }
 }
 .theGroupAgentsList figure {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 .theGroupAgentsList figcaption h3 {
   text-align: left;
@@ -176,7 +178,7 @@ body {
   width: 60px;
 }
 .theGroupAgentsList .imgContainer {
-  width: 105px;
+  max-width: 105px;
   height: 131px;
   position: relative;
 }

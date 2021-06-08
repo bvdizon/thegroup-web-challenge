@@ -26,34 +26,34 @@
         <h2>Quick Links</h2>
         <ul>
             <li>
-                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg" alt="" width="25"
-                    height="25">
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg"
+                    alt="red maple leaf icon" width="25" height="25">
                 <a href="#calgary">Calgary and Surrounding Area</a>
             </li>
             <li>
-                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg" alt="" width="25"
-                    height="25">
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg"
+                    alt="red maple leaf icon" width="25" height="25">
                 <a href="#edmonton">Edmonton and Surrounding Area</a>
             </li>
             <li>
-                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg" alt="" width="25"
-                    height="25">
-                <a href="">Greater Toronto Area</a>
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg"
+                    alt="red maple leaf icon" width="25" height="25">
+                <a href="#toronto">Greater Toronto Area</a>
             </li>
             <li>
-                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg" alt="" width="25"
-                    height="25">
-                <a href="">Greater Vancouver Area</a>
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg"
+                    alt="red maple leaf icon" width="25" height="25">
+                <a href="#vancouver">Greater Vancouver Area</a>
             </li>
             <li>
-                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg" alt="" width="25"
-                    height="25">
-                <a href="">Ottawa and Surrounding Area</a>
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg"
+                    alt="red maple leaf icon" width="25" height="25">
+                <a href="#ottawa">Ottawa and Surrounding Area</a>
             </li>
             <li>
-                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg" alt="" width="25"
-                    height="25">
-                <a href="">Interior BC</a>
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/maple-leaf-red.svg"
+                    alt="red maple leaf icon" width="25" height="25">
+                <a href="#bc">Interior BC</a>
             </li>
         </ul>
     </div>
@@ -88,6 +88,49 @@
 
             <section class="theGroupAgentsList" id="edmontonRealtors"></section>
         </div>
+
+        <div class="theGroupCalgaryRealtors" id="toronto">
+            <header class="theGroupAreaHeader">
+                <h2>Greater Toronto Area Realtors&reg;</h2>
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/edmonton-skyline.jpg" alt="toronto Skyline">
+            </header>
+
+            <section class="my-20">
+                <p>Veimilique ex ut vero est veritatis nihil non sapiente. Ea consequatur iusto
+                    eaque commodi, quasi aliquam ipsum, aliquid vel exercitationem quidem perspiciatis error!</p>
+            </section>
+
+            <section class="theGroupAgentsList" id="torontoRealtors"></section>
+        </div>
+
+        <div class="theGroupCalgaryRealtors" id="vancouver">
+            <header class="theGroupAreaHeader">
+                <h2>Greater Vancouver Area Realtors&reg;</h2>
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/edmonton-skyline.jpg"
+                    alt="Vancouver Skyline">
+            </header>
+
+            <section class="my-20">
+                <p>Veimilique ex ut vero est veritatis nihil non sapiente. Ea consequatur iusto
+                    eaque commodi, quasi aliquam ipsum, aliquid vel exercitationem quidem perspiciatis error!</p>
+            </section>
+
+            <section class="theGroupAgentsList" id="vancouverRealtors"></section>
+        </div>
+
+        <div class="theGroupCalgaryRealtors" id="vancouver">
+            <header class="theGroupAreaHeader">
+                <h2>Interior BC Area Realtors&reg;</h2>
+                <img src="https://www.real-estate.ca/uploads/agent-1/agents/edmonton-skyline.jpg" alt="BC Skyline">
+            </header>
+
+            <section class="my-20">
+                <p>Veimilique ex ut vero est veritatis nihil non sapiente. Ea consequatur iusto
+                    eaque commodi, quasi aliquam ipsum, aliquid vel exercitationem quidem perspiciatis error!</p>
+            </section>
+
+            <section class="theGroupAgentsList" id="bcRealtors"></section>
+        </div>
     </div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -105,6 +148,12 @@
                 href="https://unsplash.com/@hudyjack_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Billy
                 Hudy</a> on <a
                 href="https://unsplash.com/s/photos/edmonton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
+
+        <div>
+            Toronto Header Photo by <a href="https://unsplash.com/photos/R0a9So1Sl9U" target="_blank"
+                rel="noreferrer nofollow">Maarten van den Heuvel</a> on <a href="https://unsplash.com/" target="_blank"
+                rel="noreferrer nofollow">Unsplash</a>
         </div>
     </div>
 
@@ -141,7 +190,7 @@
                             <h3>${agent.gsx$first.$t} <span>${agent.gsx$last.$t}</span></h3>
                             <p><span>Office #:</span> <span>${agent.gsx$office.$t}</span></p>
                             <p><span>Mobile #:</span> <span>${agent.gsx$mobile.$t}</span></p>
-                            <p><span>Email:</span> <span><a href="mailto:${agent.gsx$email.$t}">${agent.gsx$email.$t}</a></span>
+                            <p><a href="mailto:${agent.gsx$email.$t}">${agent.gsx$email.$t}</a></span>
                             </p>
                         </figcaption>
                     </figure>
@@ -153,6 +202,9 @@
 
         getAgents('Calgary').then(data => processData(data, 'calgaryRealtors'))
         getAgents('Edmonton').then(data => processData(data, 'edmontonRealtors'))
+        getAgents('Toronto').then(data => processData(data, 'torontoRealtors'))
+        getAgents('Vancouver').then(data => processData(data, 'vancouverRealtors'))
+        getAgents('BC').then(data => processData(data, 'bcRealtors'))
     </script>
 </body>
 
